@@ -23,21 +23,12 @@ class CustomTransitionViewController: UIViewController
         presentButton.addTarget(self, action: #selector(showModal), for: .touchUpInside)
         self.view.addSubview(presentButton)
         
-//        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:presentButton
-//            attribute:NSLayoutAttributeCenterX
-//            relatedBy:NSLayoutRelationEqual
-//            toItem:self.view
-//            attribute:NSLayoutAttributeCenterX
-//            multiplier:1.f
-//            constant:0.f]];
-//
-//        [self.view addConstraint:[NSLayoutConstraint constraintWithItem:presentButton
-//            attribute:NSLayoutAttributeCenterY
-//            relatedBy:NSLayoutRelationEqual
-//            toItem:self.view
-//            attribute:NSLayoutAttributeCenterY
-//            multiplier:1.f
-//            constant:0.f]];
+        self.view.addConstraint(
+            NSLayoutConstraint(item: presentButton, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        )
+        self.view.addConstraint(
+            NSLayoutConstraint(item: presentButton, attribute: .centerY, relatedBy: .equal, toItem: self.view, attribute: .centerY, multiplier: 1, constant: 0)
+        )
     }
     
     @objc func showModal(sender: Any) {

@@ -36,18 +36,19 @@ class CircleViewController: UIViewController
         slider.addTarget(self, action: #selector(sliderChanged), for: .valueChanged)
         self.view.addSubview(slider)
         
-        // NSDictionary *views = NSDictionaryOfVariableBindings(slider, _circleView);
+        let views: [String: Any] = [
+            "slider": slider,
+            "circleView": self.circleView,
+        ]
         
-//        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_circleView]-(40)-[slider]"
-//            options:0
-//            metrics:nil
-//            views:views]];
-//
-//        [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-[slider]-|"
-//            options:0
-//            metrics:nil
-//            views:views]];
-//        [self.circleView setStrokeEnd:slider.value animated:NO];
+        self.view.addConstraints(
+            NSLayoutConstraint.constraints(withVisualFormat: "V:[circleView]-(40)-[slider]", options: [], metrics: nil, views: views)
+        )
+        self.view.addConstraints(
+            NSLayoutConstraint.constraints(withVisualFormat: "H:|-[slider]-|", options: [], metrics: nil, views: views)
+        )
+        
+        self.circleView.setStrokeEnd(CGFloat(slider.value), animated: false)
     }
     
     @objc private func sliderChanged(slider: UISlider) {

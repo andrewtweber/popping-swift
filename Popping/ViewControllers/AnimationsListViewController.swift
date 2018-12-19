@@ -45,7 +45,7 @@ class AnimationsListViewController: UITableViewController
             "Custom Transition",
             //"Paper Button Animation",
             "Folding Animation",
-            //"Password Indicator Animation",
+            "Password Indicator Animation",
             //"Constraints Animation",
         ]
         self.controllers = [
@@ -55,7 +55,7 @@ class AnimationsListViewController: UITableViewController
             CustomTransitionViewController.self,
             //PaperButtonViewController.self,
             FoldingViewController.self,
-            //PasswordViewController.self,
+            PasswordViewController.self,
             //ConstraintsViewController.self,
         ]
         

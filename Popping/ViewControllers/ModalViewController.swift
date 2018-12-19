@@ -27,19 +27,16 @@ class ModalViewController: UIViewController
         dismissButton.addTarget(self, action: #selector(dismiss), for: .touchUpInside)
         self.view.addSubview(dismissButton)
         
-        //[self.view addConstraint:[NSLayoutConstraint constraintWithItem:dismissButton
-//        attribute:NSLayoutAttributeCenterX
-//        relatedBy:NSLayoutRelationEqual
-//        toItem:self.view
-//        attribute:NSLayoutAttributeCenterX
-//        multiplier:1.f
-//        constant:0.f]];
-//
-//        [self.view addConstraints:[NSLayoutConstraint
-//        constraintsWithVisualFormat:@"V:[dismissButton]-|"
-//        options:0
-//        metrics:nil
-//        views:NSDictionaryOfVariableBindings(dismissButton)]];
+        let views: [String: Any] = [
+            "dismissButton": dismissButton,
+        ]
+        
+        self.view.addConstraint(
+            NSLayoutConstraint(item: dismissButton, attribute: .centerX, relatedBy: .equal, toItem: self.view, attribute: .centerX, multiplier: 1, constant: 0)
+        )
+        self.view.addConstraints(
+            NSLayoutConstraint.constraints(withVisualFormat: "V:[dismissButton]-|", options: [], metrics: nil, views: views)
+        )
     }
     
     @objc func dismiss(sender: Any) {
