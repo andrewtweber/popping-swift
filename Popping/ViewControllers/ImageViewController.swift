@@ -40,11 +40,14 @@ class ImageViewController: UIViewController
     }
     
     @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {
-        self.scaleDownView(recognizer.view!)
+        guard let recognizerView = recognizer.view else {
+            return
+        }
+        self.scaleDownView(recognizerView)
         
         let translation: CGPoint = recognizer.translation(in: self.view)
-        recognizer.view!.center = CGPoint(x: recognizer.view!.center.x + translation.x,
-                                         y: recognizer.view!.center.y + translation.y)
+        recognizerView.center = CGPoint(x: recognizerView.center.x + translation.x,
+                                        y: recognizerView.center.y + translation.y)
         recognizer.setTranslation(CGPoint(x: 0, y: 0), in: self.view)
         
         if (recognizer.state == .ended) {
@@ -55,7 +58,7 @@ class ImageViewController: UIViewController
                 positionAnimation.dynamicsTension = 10
                 positionAnimation.dynamicsFriction = 1
                 positionAnimation.springBounciness = 12
-                recognizer.view!.layer.pop_add(positionAnimation, forKey: "layerPositionAnimation")
+                recognizerView.layer.pop_add(positionAnimation, forKey: "layerPositionAnimation")
             }
         }
     }
