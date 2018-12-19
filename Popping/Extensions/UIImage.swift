@@ -10,5 +10,21 @@ import UIKit
 
 extension UIImage
 {
-    
+    var blurred: UIImage {
+        let context = CIContext()
+        guard let inputImage = CIImage(image: self), let filter = CIFilter(name: "CIGaussianBlur") else {
+            return self
+        }
+        filter.setValue(inputImage, forKey: kCIInputImageKey)
+        filter.setValue(10, forKey: kCIInputRadiusKey)
+        
+        guard let result: CIImage = filter.outputImage else {
+            return self
+        }
+        guard let cgImage: CGImage = context.createCGImage(result, from: result.extent) else {
+            return self
+        }
+        let returnImage: UIImage = UIImage(cgImage: cgImage)
+        return returnImage
+    }
 }
