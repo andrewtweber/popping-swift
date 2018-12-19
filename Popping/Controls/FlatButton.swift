@@ -13,7 +13,7 @@ class FlatButton: UIButton
 {
     // TODO
     // + (instancetype)button
-    // return [self buttonWithType:UIButtonTypeCustom];
+    // return [self buttonWithType:UIButtonTypeCustom]
     
     override init(frame: CGRect) {
         super.init(frame: frame)
