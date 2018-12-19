@@ -11,6 +11,8 @@
 		49A58FB821C9DFBB001F775C /* PresentingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FB721C9DFBB001F775C /* PresentingAnimator.swift */; };
 		49A58FBA21C9E218001F775C /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FB921C9E218001F775C /* MenuTableViewCell.swift */; };
 		49A58FBC21C9E267001F775C /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FBB21C9E267001F775C /* UIColor.swift */; };
+		49A58FBE21C9E4CB001F775C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FBD21C9E4CB001F775C /* UIImage.swift */; };
+		49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FBF21C9E5BD001F775C /* FlatButton.swift */; };
 		B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70458331923DB2100CF6961 /* CustomTransitionViewController.m */; };
 		B735E318195728B300837F60 /* FoldingView.m in Sources */ = {isa = PBXBuildFile; fileRef = B735E317195728B300837F60 /* FoldingView.m */; };
 		B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7388F0B192E9F13000E6941 /* DecayViewController.m */; };
@@ -36,7 +38,6 @@
 		B7E342E7196F3EFA0099494A /* UIImage+Blur.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E342E6196F3EFA0099494A /* UIImage+Blur.m */; };
 		B7ECD74A19211489007F9116 /* PaperButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74919211489007F9116 /* PaperButtonViewController.m */; };
 		B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74E192115EF007F9116 /* PaperButton.m */; };
-		B7ECD754192120D4007F9116 /* FlatButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD753192120D4007F9116 /* FlatButton.m */; };
 		B7F8B05F19326C310036193C /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F8B05E19326C310036193C /* boat.jpg */; };
 		B7F8B062193270980036193C /* ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F8B061193270980036193C /* ImageView.m */; };
 		B7FF9668191EBADD00087016 /* AnimationsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FF9667191EBADD00087016 /* AnimationsListViewController.m */; };
@@ -60,6 +61,8 @@
 		49A58FB721C9DFBB001F775C /* PresentingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresentingAnimator.swift; sourceTree = "<group>"; };
 		49A58FB921C9E218001F775C /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
 		49A58FBB21C9E267001F775C /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		49A58FBD21C9E4CB001F775C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		49A58FBF21C9E5BD001F775C /* FlatButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatButton.swift; sourceTree = "<group>"; };
 		7A00DC518A35A7C96BACE3BB /* Pods-Popping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.release.xcconfig"; sourceTree = "<group>"; };
 		7DA24A14CE73257837EDE37B /* Pods-Popping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,7 +87,6 @@
 		B785AD1C19196A2D00621820 /* Popping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Popping-Info.plist"; sourceTree = "<group>"; };
 		B785AD1E19196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B785AD2019196A2D00621820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		B785AD2219196A2D00621820 /* Popping-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Popping-Prefix.pch"; sourceTree = "<group>"; };
 		B785AD2319196A2D00621820 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B785AD2419196A2D00621820 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B785AD2619196A2D00621820 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -105,8 +107,6 @@
 		B7ECD74919211489007F9116 /* PaperButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperButtonViewController.m; sourceTree = "<group>"; };
 		B7ECD74D192115EF007F9116 /* PaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButton.h; sourceTree = "<group>"; };
 		B7ECD74E192115EF007F9116 /* PaperButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperButton.m; sourceTree = "<group>"; };
-		B7ECD752192120D4007F9116 /* FlatButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatButton.h; sourceTree = "<group>"; };
-		B7ECD753192120D4007F9116 /* FlatButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlatButton.m; sourceTree = "<group>"; };
 		B7F8B05E19326C310036193C /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = "<group>"; };
 		B7F8B060193270980036193C /* ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageView.h; sourceTree = "<group>"; };
 		B7F8B061193270980036193C /* ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageView.m; sourceTree = "<group>"; };
@@ -251,7 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				B7F8B06419327C550036193C /* Cells */,
-				B7F8B0561932324E0036193C /* Categories */,
+				B7F8B0561932324E0036193C /* Extensions */,
 				B70458351923DE0D00CF6961 /* Animator */,
 				B7ECD74B192115D8007F9116 /* Controls */,
 				B785AD1B19196A2D00621820 /* Supporting Files */,
@@ -268,7 +268,6 @@
 				B785AD1C19196A2D00621820 /* Popping-Info.plist */,
 				B785AD1D19196A2D00621820 /* InfoPlist.strings */,
 				B785AD2019196A2D00621820 /* main.m */,
-				B785AD2219196A2D00621820 /* Popping-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -343,10 +342,10 @@
 				B7F8B063193272490036193C /* ImageView */,
 				B79B5C20192D361600A82EEB /* CircleView */,
 				B7805EE2192913E300CF997E /* PasswordStrengthIndicatorView */,
-				B7ECD751192120C6007F9116 /* FlatButton */,
 				B7ECD74C192115DD007F9116 /* PaperButton */,
+				49A58FBF21C9E5BD001F775C /* FlatButton.swift */,
 			);
-			name = Controls;
+			path = Controls;
 			sourceTree = "<group>";
 		};
 		B7ECD74C192115DD007F9116 /* PaperButton */ = {
@@ -358,22 +357,14 @@
 			name = PaperButton;
 			sourceTree = "<group>";
 		};
-		B7ECD751192120C6007F9116 /* FlatButton */ = {
-			isa = PBXGroup;
-			children = (
-				B7ECD752192120D4007F9116 /* FlatButton.h */,
-				B7ECD753192120D4007F9116 /* FlatButton.m */,
-			);
-			name = FlatButton;
-			sourceTree = "<group>";
-		};
-		B7F8B0561932324E0036193C /* Categories */ = {
+		B7F8B0561932324E0036193C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				B7E342E8196F3EFF0099494A /* UIImage */,
 				49A58FBB21C9E267001F775C /* UIColor.swift */,
+				49A58FBD21C9E4CB001F775C /* UIImage.swift */,
 			);
-			path = Categories;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B7F8B063193272490036193C /* ImageView */ = {
@@ -606,11 +597,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				B79B5C23192D37DB00A82EEB /* CircleView.m in Sources */,
+				49A58FBE21C9E4CB001F775C /* UIImage.swift in Sources */,
 				B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */,
 				B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */,
+				49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */,
 				B79B5C1F192D349B00A82EEB /* CircleViewController.m in Sources */,
 				B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */,
-				B7ECD754192120D4007F9116 /* FlatButton.m in Sources */,
 				B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */,
 				B7805EE51929141100CF997E /* PasswordStrengthIndicatorView.m in Sources */,
 				49A58FBC21C9E267001F775C /* UIColor.swift in Sources */,
