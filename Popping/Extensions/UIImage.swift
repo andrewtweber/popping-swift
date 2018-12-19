@@ -21,7 +21,7 @@ extension UIImage
         guard let result: CIImage = filter.outputImage else {
             return self
         }
-        guard let cgImage: CGImage = context.createCGImage(result, from: result.extent) else {
+        guard let cgImage: CGImage = context.createCGImage(result, from: inputImage.extent) else {
             return self
         }
         let returnImage: UIImage = UIImage(cgImage: cgImage)
