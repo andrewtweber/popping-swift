@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         
-        let animationsListViewController = AnimationsListViewController()
+        let animationsListViewController = AnimationsListViewController() as UIViewController
         let navigationController = UINavigationController(rootViewController: animationsListViewController)
         
         self.window?.rootViewController = navigationController
