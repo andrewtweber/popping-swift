@@ -51,6 +51,7 @@ class FoldingView: UIView
         self.topView.isUserInteractionEnabled = true
         self.topView.contentMode = .scaleAspectFill
         
+        // TODO: blurred image is too small
         self.backView = UIImageView(frame: self.topView.bounds)
         self.backView.image = image.blurred
         self.backView.alpha = 0.0

@@ -32,7 +32,7 @@ class ImageViewController: UIViewController
         let height = width * 0.75
         let imageView = ImageView(frame: CGRect(x: 0, y: 0, width: width, height: height))
         imageView.center = self.view.center
-        imageView.setImage(UIImage(named: "boat.jpg")!)
+        imageView.setImage(UIImage(named: "winnie.jpg")!)
         imageView.addTarget(self, action: #selector(touchDown), for: .touchDown)
         imageView.addTarget(self, action: #selector(touchUpInside), for: .touchUpInside)
         imageView.addGestureRecognizer(recognizer)
@@ -114,17 +114,16 @@ class ImageViewController: UIViewController
     
     func pauseAllAnimations(_ pause: Bool, forLayer layer: CALayer)
     {
-        // TODO for some reason layer is nil when called from touchDown
-        if (pause == true) {
+        guard let keys = layer.pop_animationKeys() else {
             return
         }
-        for key in layer.pop_animationKeys() {
+        for key in keys {
             let animation: POPAnimation = layer.pop_animation(forKey: key as? String) as! POPAnimation
             animation.isPaused = pause
         }
     }
     
-    // TODO this never happens?
+    // TODO: this never happens?
     func scaleUpView(_ view: UIView) {
         if let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPosition) {
             positionAnimation.toValue = self.view.center

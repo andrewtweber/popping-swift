@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4915D98921CAFCC200A1D373 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915D98821CAFCC200A1D373 /* ButtonViewController.swift */; };
+		4915D98B21CB0B4B00A1D373 /* winnie.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4915D98A21CB0B4B00A1D373 /* winnie.jpg */; };
 		491D3D3421CAEA4C00D72279 /* PaperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D3D3321CAEA4C00D72279 /* PaperButton.swift */; };
 		491D3D3621CAED9900D72279 /* PaperButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D3D3521CAED9900D72279 /* PaperButtonViewController.swift */; };
 		49A58FB621C9DF0E001F775C /* DismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FB521C9DF0E001F775C /* DismissingAnimator.swift */; };
@@ -33,14 +34,12 @@
 		B785AD1519196A2D00621820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1419196A2D00621820 /* Foundation.framework */; };
 		B785AD1719196A2D00621820 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1619196A2D00621820 /* CoreGraphics.framework */; };
 		B785AD1919196A2D00621820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1819196A2D00621820 /* UIKit.framework */; };
-		B785AD1F19196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD1D19196A2D00621820 /* InfoPlist.strings */; };
 		B785AD2719196A2D00621820 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B785AD2619196A2D00621820 /* Images.xcassets */; };
 		B785AD2E19196A2D00621820 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD2D19196A2D00621820 /* XCTest.framework */; };
 		B785AD2F19196A2D00621820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1419196A2D00621820 /* Foundation.framework */; };
 		B785AD3019196A2D00621820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1819196A2D00621820 /* UIKit.framework */; };
 		B785AD3819196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD3619196A2D00621820 /* InfoPlist.strings */; };
 		B785AD3A19196A2D00621820 /* PoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B785AD3919196A2D00621820 /* PoppingTests.m */; };
-		B7F8B05F19326C310036193C /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F8B05E19326C310036193C /* boat.jpg */; };
 		D26921FD32BE44A8B661720F /* Pods_Popping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		4915D98821CAFCC200A1D373 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		4915D98A21CB0B4B00A1D373 /* winnie.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = winnie.jpg; sourceTree = "<group>"; };
 		491D3D3321CAEA4C00D72279 /* PaperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperButton.swift; sourceTree = "<group>"; };
 		491D3D3521CAED9900D72279 /* PaperButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperButtonViewController.swift; sourceTree = "<group>"; };
 		49A58FB521C9DF0E001F775C /* DismissingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingAnimator.swift; sourceTree = "<group>"; };
@@ -85,15 +85,13 @@
 		B785AD1419196A2D00621820 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B785AD1619196A2D00621820 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B785AD1819196A2D00621820 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		B785AD1C19196A2D00621820 /* Popping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Popping-Info.plist"; sourceTree = "<group>"; };
-		B785AD1E19196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B785AD1C19196A2D00621820 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B785AD2619196A2D00621820 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B785AD2C19196A2D00621820 /* PoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B785AD2D19196A2D00621820 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B785AD3519196A2D00621820 /* PoppingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoppingTests-Info.plist"; sourceTree = "<group>"; };
 		B785AD3719196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B785AD3919196A2D00621820 /* PoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoppingTests.m; sourceTree = "<group>"; };
-		B7F8B05E19326C310036193C /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,11 +178,10 @@
 		B785AD1B19196A2D00621820 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B7F8B05E19326C310036193C /* boat.jpg */,
-				B785AD1C19196A2D00621820 /* Popping-Info.plist */,
-				B785AD1D19196A2D00621820 /* InfoPlist.strings */,
+				B785AD1C19196A2D00621820 /* Info.plist */,
+				4915D98A21CB0B4B00A1D373 /* winnie.jpg */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B785AD3319196A2D00621820 /* PoppingTests */ = {
@@ -343,9 +340,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B785AD1F19196A2D00621820 /* InfoPlist.strings in Resources */,
-				B7F8B05F19326C310036193C /* boat.jpg in Resources */,
 				B785AD2719196A2D00621820 /* Images.xcassets in Resources */,
+				4915D98B21CB0B4B00A1D373 /* winnie.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,14 +452,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B785AD1D19196A2D00621820 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B785AD1E19196A2D00621820 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		B785AD3619196A2D00621820 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -585,7 +573,7 @@
 				DEVELOPMENT_TEAM = EUHBJ29876;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = "Popping/Popping-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Popping/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cool.andrew.Popping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,7 +594,7 @@
 				DEVELOPMENT_TEAM = EUHBJ29876;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "";
-				INFOPLIST_FILE = "Popping/Popping-Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Popping/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cool.andrew.Popping;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -30,7 +30,7 @@ class FoldingViewController: UIViewController
         let width: CGFloat = self.view.bounds.width - (padding * 2)
         let frame: CGRect = CGRect(x: 0, y: 0, width: width, height: width)
         
-        self.foldView = FoldingView(frame: frame, image: UIImage(named: "boat.jpg")!)
+        self.foldView = FoldingView(frame: frame, image: UIImage(named: "winnie.jpg")!)
         self.foldView.center = self.view.center
         self.view.addSubview(self.foldView)
     }
