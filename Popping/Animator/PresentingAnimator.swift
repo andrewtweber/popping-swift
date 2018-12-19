@@ -35,7 +35,7 @@ class PresentingAnimator: NSObject, UIViewControllerAnimatedTransitioning
         let height = transitionContext.containerView.bounds.height
         let centerX = transitionContext.containerView.center.x
         let centerY = transitionContext.containerView.center.y
-        toView.frame = CGRect(x: 0, y:0, width: width, height: height)
+        toView.frame = CGRect(x: 0, y: 0, width: width, height: height)
         toView.center = CGPoint(x: centerX, y: -centerY)
         
         transitionContext.containerView.addSubview(dimmingView)
