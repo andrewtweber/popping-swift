@@ -55,6 +55,7 @@ class PaperButtonViewController: UIViewController
     @objc func animateTitleLabel(_ sender: Any) {
         let toValue: CGFloat = self.view.bounds.midX
         
+        // TODO on screen animation is not springy
         guard let onscreenAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionX) else {
             return
         }

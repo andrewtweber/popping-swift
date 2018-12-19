@@ -39,7 +39,7 @@ class AnimationsListViewController: UITableViewController
     
     private func configureTableView() {
         self.titles = [
-            //"Button Animation",
+            "Button Animation",
             "Decay Animation",
             "Circle Animation",
             "Image Animation",
@@ -50,7 +50,7 @@ class AnimationsListViewController: UITableViewController
             "Constraints Animation",
         ]
         self.controllers = [
-            //ButtonViewController.self,
+            ButtonViewController.self,
             DecayViewController.self,
             CircleViewController.self,
             ImageViewController.self,

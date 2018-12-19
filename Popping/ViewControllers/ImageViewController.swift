@@ -116,6 +116,7 @@ class ImageViewController: UIViewController
         }
     }
     
+    // TODO this never happens?
     func scaleUpView(_ view: UIView) {
         if let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPosition) {
             positionAnimation.toValue = self.view.center

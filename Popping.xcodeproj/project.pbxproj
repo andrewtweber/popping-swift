@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4915D98921CAFCC200A1D373 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4915D98821CAFCC200A1D373 /* ButtonViewController.swift */; };
 		491D3D3421CAEA4C00D72279 /* PaperButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D3D3321CAEA4C00D72279 /* PaperButton.swift */; };
 		491D3D3621CAED9900D72279 /* PaperButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 491D3D3521CAED9900D72279 /* PaperButtonViewController.swift */; };
 		49A58FB621C9DF0E001F775C /* DismissingAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FB521C9DF0E001F775C /* DismissingAnimator.swift */; };
@@ -40,7 +41,6 @@
 		B785AD3819196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD3619196A2D00621820 /* InfoPlist.strings */; };
 		B785AD3A19196A2D00621820 /* PoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B785AD3919196A2D00621820 /* PoppingTests.m */; };
 		B7F8B05F19326C310036193C /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F8B05E19326C310036193C /* boat.jpg */; };
-		B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7FF966B191EBF6900087016 /* ButtonViewController.m */; };
 		D26921FD32BE44A8B661720F /* Pods_Popping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +55,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4915D98821CAFCC200A1D373 /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		491D3D3321CAEA4C00D72279 /* PaperButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperButton.swift; sourceTree = "<group>"; };
 		491D3D3521CAED9900D72279 /* PaperButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaperButtonViewController.swift; sourceTree = "<group>"; };
 		49A58FB521C9DF0E001F775C /* DismissingAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissingAnimator.swift; sourceTree = "<group>"; };
@@ -93,8 +94,6 @@
 		B785AD3719196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B785AD3919196A2D00621820 /* PoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoppingTests.m; sourceTree = "<group>"; };
 		B7F8B05E19326C310036193C /* boat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boat.jpg; sourceTree = "<group>"; };
-		B7FF966A191EBF6900087016 /* ButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonViewController.h; sourceTree = "<group>"; };
-		B7FF966B191EBF6900087016 /* ButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,8 +238,8 @@
 		B7FF965B191EB5D900087016 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				B7FF9669191EBF3F00087016 /* ButtonViewController */,
 				49A58FCD21CA0222001F775C /* AnimationsListViewController.swift */,
+				4915D98821CAFCC200A1D373 /* ButtonViewController.swift */,
 				49A58FCB21C9FBC2001F775C /* CircleViewController.swift */,
 				49A58FD921CA35E6001F775C /* ConstraintsViewController.swift */,
 				49A58FD121CA0B4C001F775C /* CustomTransitionViewController.swift */,
@@ -252,15 +251,6 @@
 				49A58FD521CA1F9B001F775C /* PasswordViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		B7FF9669191EBF3F00087016 /* ButtonViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B7FF966A191EBF6900087016 /* ButtonViewController.h */,
-				B7FF966B191EBF6900087016 /* ButtonViewController.m */,
-			);
-			name = ButtonViewController;
 			sourceTree = "<group>";
 		};
 		FE6B9643DCE45BE1BD098476 /* Pods */ = {
@@ -430,13 +420,13 @@
 				49A58FBE21C9E4CB001F775C /* UIImage.swift in Sources */,
 				491D3D3421CAEA4C00D72279 /* PaperButton.swift in Sources */,
 				49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */,
-				B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */,
 				49A58FBC21C9E267001F775C /* UIColor.swift in Sources */,
 				49A58FB621C9DF0E001F775C /* DismissingAnimator.swift in Sources */,
 				49A58FD221CA0B4C001F775C /* CustomTransitionViewController.swift in Sources */,
 				491D3D3621CAED9900D72279 /* PaperButtonViewController.swift in Sources */,
 				49A58FC821C9F801001F775C /* AppDelegate.swift in Sources */,
 				49A58FCC21C9FBC2001F775C /* CircleViewController.swift in Sources */,
+				4915D98921CAFCC200A1D373 /* ButtonViewController.swift in Sources */,
 				49A58FD021CA0A9B001F775C /* ModalViewController.swift in Sources */,
 				49A58FD621CA1F9B001F775C /* PasswordViewController.swift in Sources */,
 				49A58FC421C9E9E6001F775C /* FoldingView.swift in Sources */,

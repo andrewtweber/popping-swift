@@ -11,9 +11,9 @@ import UIKit
 
 class FlatButton: UIButton
 {
-    // TODO
-    // + (instancetype)button
-    // return [self buttonWithType:UIButtonTypeCustom]
+    convenience init() {
+        self.init(type: .custom)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
