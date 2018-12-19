@@ -18,7 +18,15 @@ import UIKit
 
 class PasswordStrengthIndicatorView: UIView
 {
-    var status: PasswordStrengthIndicatorViewStatus = .none
+    var status: PasswordStrengthIndicatorViewStatus = .none {
+        didSet {
+            if (status == oldValue) {
+                return
+            }
+
+            self.animateIndicatorViewToStatus(status)
+        }
+    }
     var indicatorView: UIView!
     
     override init(frame: CGRect) {
@@ -31,15 +39,6 @@ class PasswordStrengthIndicatorView: UIView
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-    }
-    
-    func setStatus(_ status: PasswordStrengthIndicatorViewStatus) {
-        if (status == self.status) {
-            return
-        }
-        
-        self.status = status
-        self.animateIndicatorViewToStatus(status)
     }
     
     func animateIndicatorViewToStatus(_ status: PasswordStrengthIndicatorViewStatus) {

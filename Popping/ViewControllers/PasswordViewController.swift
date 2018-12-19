@@ -68,20 +68,20 @@ class PasswordViewController: UIViewController
     
     @objc private func textFieldDidChange(sender: UITextField) {
         if (sender.text!.count < 1) {
-            self.passwordStrengthIndicatorView.setStatus(.none)
+            self.passwordStrengthIndicatorView.status = .none
             return
         }
         
-        if (sender.text!.count < 4) {
-            self.passwordStrengthIndicatorView.setStatus(.weak)
+        if (sender.text!.count < 5) {
+            self.passwordStrengthIndicatorView.status = .weak
             return
         }
         
-        if (sender.text!.count < 8) {
-            self.passwordStrengthIndicatorView.setStatus(.fair)
+        if (sender.text!.count < 10) {
+            self.passwordStrengthIndicatorView.status = .fair
             return
         }
         
-        self.passwordStrengthIndicatorView.setStatus(.strong)
+        self.passwordStrengthIndicatorView.status = .strong
     }
 }

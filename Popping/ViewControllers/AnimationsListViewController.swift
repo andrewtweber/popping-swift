@@ -41,7 +41,7 @@ class AnimationsListViewController: UITableViewController
         self.titles = [
             //"Button Animation",
             "Circle Animation",
-            //"Image Animation",
+            "Image Animation",
             "Custom Transition",
             //"Paper Button Animation",
             "Folding Animation",
@@ -51,7 +51,7 @@ class AnimationsListViewController: UITableViewController
         self.controllers = [
             //ButtonViewController.self,
             CircleViewController.self,
-            //ImageViewController.self,
+            ImageViewController.self,
             CustomTransitionViewController.self,
             //PaperButtonViewController.self,
             FoldingViewController.self,
