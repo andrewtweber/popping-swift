@@ -1,13 +1,13 @@
+////
+////  PasswordViewController.h
+////  Popping
+////
+////  Created by André Schneider on 18.05.14.
+////  Copyright (c) 2014 André Schneider. All rights reserved.
+////
 //
-//  PasswordViewController.h
-//  Popping
+//#import <UIKit/UIKit.h>
 //
-//  Created by André Schneider on 18.05.14.
-//  Copyright (c) 2014 André Schneider. All rights reserved.
+//@interface PasswordViewController : UIViewController
 //
-
-#import <UIKit/UIKit.h>
-
-@interface PasswordViewController : UIViewController
-
-@end
+//@end

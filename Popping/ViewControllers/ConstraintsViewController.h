@@ -1,13 +1,13 @@
+////
+////  ConstraintsViewController.h
+////  Popping
+////
+////  Created by André Schneider on 19.05.14.
+////  Copyright (c) 2014 André Schneider. All rights reserved.
+////
 //
-//  ConstraintsViewController.h
-//  Popping
+//#import <UIKit/UIKit.h>
 //
-//  Created by André Schneider on 19.05.14.
-//  Copyright (c) 2014 André Schneider. All rights reserved.
+//@interface ConstraintsViewController : UIViewController
 //
-
-#import <UIKit/UIKit.h>
-
-@interface ConstraintsViewController : UIViewController
-
-@end
+//@end

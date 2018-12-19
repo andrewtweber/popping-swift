@@ -1,16 +1,16 @@
+////
+////  PaperButton.h
+////  Popping
+////
+////  Created by André Schneider on 12.05.14.
+////  Copyright (c) 2014 André Schneider. All rights reserved.
+////
 //
-//  PaperButton.h
-//  Popping
+//#import <UIKit/UIKit.h>
 //
-//  Created by André Schneider on 12.05.14.
-//  Copyright (c) 2014 André Schneider. All rights reserved.
+//@interface PaperButton : UIControl
 //
-
-#import <UIKit/UIKit.h>
-
-@interface PaperButton : UIControl
-
-+ (instancetype)button;
-+ (instancetype)buttonWithOrigin:(CGPoint)origin;
-
-@end
+//+ (instancetype)button;
+//+ (instancetype)buttonWithOrigin:(CGPoint)origin;
+//
+//@end

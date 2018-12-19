@@ -1,13 +1,13 @@
+////
+////  PaperButtonViewController.h
+////  Popping
+////
+////  Created by André Schneider on 12.05.14.
+////  Copyright (c) 2014 André Schneider. All rights reserved.
+////
 //
-//  PaperButtonViewController.h
-//  Popping
+//#import <UIKit/UIKit.h>
 //
-//  Created by André Schneider on 12.05.14.
-//  Copyright (c) 2014 André Schneider. All rights reserved.
+//@interface PaperButtonViewController : UIViewController
 //
-
-#import <UIKit/UIKit.h>
-
-@interface PaperButtonViewController : UIViewController
-
-@end
+//@end
