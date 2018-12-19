@@ -19,6 +19,8 @@ class CircleViewController: UIViewController
         self.addSlider()
     }
     
+    // MARK: - Private instance methods
+    
     private func addCircleView() {
         let frame = CGRect(x: 0, y: 0, width: 200, height: 200)
         self.circleView = CircleView(frame: frame)

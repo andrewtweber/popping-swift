@@ -24,6 +24,8 @@ class CircleView: UIView
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Property setters
+    
     func setStrokeEnd(_ strokeEnd: CGFloat, animated: Bool) {
         if (animated) {
             self.animateToStrokeEnd(strokeEnd)
@@ -36,6 +38,8 @@ class CircleView: UIView
         self.circleLayer.strokeColor = strokeColor.cgColor
         self.strokeColor = strokeColor
     }
+    
+    // MARK: - Private instance methods
     
     private func addCircleLayer() {
         let lineWidth: CGFloat = 4

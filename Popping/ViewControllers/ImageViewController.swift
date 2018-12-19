@@ -23,6 +23,8 @@ class ImageViewController: UIViewController
         self.addImageView()
     }
     
+    // MARK: - Private instance methods
+    
     private func addImageView() {
         let recognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
         
@@ -38,6 +40,8 @@ class ImageViewController: UIViewController
         self.view.addSubview(imageView)
         self.scaleDownView(imageView)
     }
+    
+    // MARK: - Event handlers
     
     @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {
         guard let recognizerView = recognizer.view else {
@@ -86,6 +90,8 @@ class ImageViewController: UIViewController
         self.scaleUpView(sender)
     }
     
+    // MARK: - Animation info
+    
     func animationInfoForLayer(_ layer: CALayer) -> AnimationInfo? {
         guard let animation: POPSpringAnimation = layer.pop_animation(forKey: "scaleAnimation") as? POPSpringAnimation else {
             return nil
@@ -103,6 +109,8 @@ class ImageViewController: UIViewController
         )
         return info
     }
+    
+    // MARK: - Animations
     
     func pauseAllAnimations(_ pause: Bool, forLayer layer: CALayer)
     {

@@ -36,6 +36,8 @@ class FoldingView: UIView
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Private instance methods
+    
     private func addTopView() {
         let image: UIImage = self.imageForSection(.top, withImage: self.image)
         
@@ -93,6 +95,43 @@ class FoldingView: UIView
         self.rotateToOriginWithVelocity(5)
     }
     
+    private func transform3D() -> CATransform3D {
+        var transform: CATransform3D = CATransform3DIdentity
+        transform.m34 = 2.5 / -2000
+        return transform
+    }
+    
+    private func isLocation(_ location: CGPoint, inView view: UIView) -> Bool {
+        if ((location.x > 0 && location.x < self.bounds.width) &&
+            (location.y > 0 && location.y < self.bounds.height)) {
+            return true
+        }
+        
+        return false
+    }
+    
+    private func imageForSection(_ section: LayerSection, withImage image: UIImage) -> UIImage {
+        var rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height / 2)
+        if (section == .bottom) {
+            rect.origin.y = image.size.height / 2
+        }
+        
+        let imgRef = image.cgImage?.cropping(to: rect)
+        let imagePart = UIImage(cgImage: imgRef!)
+        return imagePart
+    }
+    
+    private func maskForSection(_ section: LayerSection, withRect rect: CGRect) -> CAShapeLayer {
+        let layerMask = CAShapeLayer()
+        let corners = UIRectCorner(rawValue: section == .top ? 3 : 12)
+        
+        let size = CGSize(width: 5, height: 5)
+        layerMask.path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: size).cgPath
+        return layerMask
+    }
+    
+    // MARK: - Event handlers
+    
     @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {
         let location: CGPoint = recognizer.location(in: self)
         
@@ -139,6 +178,8 @@ class FoldingView: UIView
         }
     }
     
+    // MARK: - Animations
+    
     private func rotateToOriginWithVelocity(_ velocity: CGFloat) {
         if let rotationAnimation = POPSpringAnimation(propertyNamed: kPOPLayerRotationX) {
             if (velocity > 0) {
@@ -153,42 +194,9 @@ class FoldingView: UIView
             self.topView.layer.pop_add(rotationAnimation, forKey: "rotationAnimation")
         }
     }
-    
-    private func transform3D() -> CATransform3D {
-        var transform: CATransform3D = CATransform3DIdentity
-        transform.m34 = 2.5 / -2000
-        return transform
-    }
-    
-    private func isLocation(_ location: CGPoint, inView view: UIView) -> Bool {
-        if ((location.x > 0 && location.x < self.bounds.width) &&
-            (location.y > 0 && location.y < self.bounds.height)) {
-            return true
-        }
-        
-        return false
-    }
-    
-    private func imageForSection(_ section: LayerSection, withImage image: UIImage) -> UIImage {
-        var rect = CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height / 2)
-        if (section == .bottom) {
-            rect.origin.y = image.size.height / 2
-        }
-        
-        let imgRef = image.cgImage?.cropping(to: rect)
-        let imagePart = UIImage(cgImage: imgRef!)
-        return imagePart
-    }
-    
-    private func maskForSection(_ section: LayerSection, withRect rect: CGRect) -> CAShapeLayer {
-        let layerMask = CAShapeLayer()
-        let corners = UIRectCorner(rawValue: section == .top ? 3 : 12)
-        
-        let size = CGSize(width: 5, height: 5)
-        layerMask.path = UIBezierPath(roundedRect: rect, byRoundingCorners: corners, cornerRadii: size).cgPath
-        return layerMask
-    }
 }
+
+// MARK: - pop Animation delegate
 
 extension FoldingView: POPAnimationDelegate
 {

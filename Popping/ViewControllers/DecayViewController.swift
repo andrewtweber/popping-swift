@@ -19,6 +19,8 @@ class DecayViewController: UIViewController
         self.addDragView()
     }
     
+    // MARK: - Private instance methods
+    
     private func addDragView() {
         let recognizer = UIPanGestureRecognizer(target: self, action: #selector(handlePan))
         
@@ -56,6 +58,8 @@ class DecayViewController: UIViewController
         }
     }
 }
+
+// MARK: - pop Animation delegate
 
 extension DecayViewController: POPAnimationDelegate
 {

@@ -41,6 +41,8 @@ class PasswordStrengthIndicatorView: UIView
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Private instance methods
+    
     func animateIndicatorViewToStatus(_ status: PasswordStrengthIndicatorViewStatus) {
         let constraints = self.constraints.enumerated()
         for constraint in constraints {

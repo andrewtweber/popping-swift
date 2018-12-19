@@ -19,6 +19,8 @@ class PasswordViewController: UIViewController
         self.addPasswordTextField()
         self.addPasswordStrengthView()
     }
+    
+    // MARK: - Private instance methods
  
     private func addPasswordTextField()
     {
@@ -65,6 +67,8 @@ class PasswordViewController: UIViewController
             NSLayoutConstraint.constraints(withVisualFormat: "V:[passwordTextField]-[passwordStrengthIndicatorView(==10)]", options: [], metrics: nil, views: views)
         )
     }
+    
+    // MARK: - Event handlers
     
     @objc private func textFieldDidChange(_ sender: UITextField) {
         if (sender.text!.count < 1) {

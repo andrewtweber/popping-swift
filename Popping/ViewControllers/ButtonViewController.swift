@@ -23,6 +23,8 @@ class ButtonViewController: UIViewController
         self.addActivityIndicatorView()
     }
     
+    // MARK: - Private instance methods
+    
     private func addButton() {
         self.button = FlatButton()
         self.button.backgroundColor = .customBlue
@@ -77,6 +79,8 @@ class ButtonViewController: UIViewController
             self.showLabel()
         }
     }
+    
+    // MARK: - Animations
     
     func shakeButton() {
         if let positionAnimation = POPSpringAnimation(propertyNamed: kPOPLayerPositionX) {

@@ -16,6 +16,8 @@ class CustomTransitionViewController: UIViewController
         self.addPresentButton()
     }
     
+    // MARK: - Private instance methods
+    
     private func addPresentButton() {
         let presentButton = UIButton(type: .system)
         presentButton.translatesAutoresizingMaskIntoConstraints = false
@@ -39,6 +41,8 @@ class CustomTransitionViewController: UIViewController
         self.navigationController?.present(modalViewController, animated: true, completion: nil)
     }
 }
+
+// MARK: - Transitioning delegate
 
 extension CustomTransitionViewController: UIViewControllerTransitioningDelegate
 {

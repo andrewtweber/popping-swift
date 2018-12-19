@@ -26,6 +26,8 @@ class ImageView: UIControl
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Property setters
+    
     func setImage(_ image: UIImage) {
         self.imageView.image = image
         self.image = image

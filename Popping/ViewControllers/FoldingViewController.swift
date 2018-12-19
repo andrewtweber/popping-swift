@@ -23,6 +23,8 @@ class FoldingViewController: UIViewController
         self.foldView.poke()
     }
     
+    // MARK: - Private instance methods
+    
     private func addFoldView() {
         let padding: CGFloat = 30
         let width: CGFloat = self.view.bounds.width - (padding * 2)

@@ -20,6 +20,8 @@ class PaperButtonViewController: UIViewController
         self.addTitleLabel()
     }
     
+    // MARK: - Private instance methods
+    
     private func addBarButton() {
         let button = PaperButton()
         button.addTarget(self, action: #selector(animateTitleLabel), for: .touchUpInside)

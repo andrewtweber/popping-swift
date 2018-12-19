@@ -19,6 +19,8 @@ class ModalViewController: UIViewController
         self.addDismissButton()
     }
     
+    // MARK: - Private instance methods
+    
     private func addBackgroundView() {
         self.backgroundView = UIView()
         self.backgroundView.layer.cornerRadius = 8

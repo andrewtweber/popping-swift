@@ -40,6 +40,8 @@ class FlatButton: UIButton
                       height: s.height + self.titleEdgeInsets.top + self.titleEdgeInsets.bottom)
     }
     
+    // MARK: - Private instance methods
+    
     private func setup() {
         self.backgroundColor = self.tintColor
         self.layer.cornerRadius = 4
@@ -50,6 +52,8 @@ class FlatButton: UIButton
         addTarget(self, action: #selector(scaleAnimation), for: .touchUpInside)
         addTarget(self, action: #selector(scaleToDefault), for: .touchDragExit)
     }
+    
+    // MARK: - Animations
     
     @objc private func scaleToSmall() {
         if let scaleAnimation = POPBasicAnimation(propertyNamed: kPOPLayerScaleXY) {

@@ -1,6 +1,8 @@
 ![popping](http://cl.ly/Vkhr/popping.png)
 
-Popping is a collection of animation examples for iOS apps. **Now converted to Swift!** Almost all of them were created using the Facebook [pop](https://github.com/facebook/pop) animation engine. It should inspire you to create some great looking UIs to delight people who use your app.
+**Now ported to Swift!**
+
+Popping is a collection of animation examples for iOS apps. Almost all of them were created using the Facebook [pop](https://github.com/facebook/pop) animation engine. It should inspire you to create some great looking UIs to delight people who use your app.
 
 ![popping](http://cl.ly/VlRu/popping.gif)
 
@@ -18,6 +20,10 @@ Watch [this video](http://cl.ly/Vja9/popping.mp4) to see all animations in actio
 ```
 pod install
 ```
+
+## Contributing
+
+Feel free to open pull requests or issues.
 
 ## Credits
 

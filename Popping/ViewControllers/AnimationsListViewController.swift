@@ -21,11 +21,15 @@ class AnimationsListViewController: UITableViewController
         self.configureTitleView()
     }
     
+    // MARK: - Table view delegate
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = self.viewController(forRowAt: indexPath)
         viewController.title = self.title(forRowAt: indexPath)
         self.navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.titles.count
@@ -36,6 +40,8 @@ class AnimationsListViewController: UITableViewController
         cell.textLabel?.text = self.title(forRowAt: indexPath)
         return cell
     }
+    
+    // MARK: - Private instance methods
     
     private func configureTableView() {
         self.titles = [
@@ -66,6 +72,7 @@ class AnimationsListViewController: UITableViewController
         self.tableView.rowHeight = 50
     }
     
+    // Makes the letter "o" blue while the rest of "popping" is gray
     private func configureTitleView() {
         let headlineLabel = UILabel()
         headlineLabel.font = UIFont(name: "Avenir-Light", size: 28)
@@ -76,7 +83,6 @@ class AnimationsListViewController: UITableViewController
             NSAttributedString.Key.foregroundColor: UIColor.customBlue,
         ]
         
-        // TODO this isn't working
         let attributedString = NSMutableAttributedString(string: self.title!)
         attributedString.addAttributes(attributes, range: NSRange(location: 1, length: 1))
         headlineLabel.attributedText = attributedString

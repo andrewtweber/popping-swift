@@ -33,12 +33,58 @@ class PaperButton: UIControl
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Instance methods
+    
     override func tintColorDidChange() {
         let color = self.tintColor.cgColor
         self.topLayer.backgroundColor = color
         self.middleLayer.backgroundColor = color
         self.bottomLayer.backgroundColor = color
     }
+    
+    // MARK: - Private instance methods
+    
+    func setup() {
+        let height: CGFloat = 2
+        let width: CGFloat = self.bounds.width
+        let cornerRadius: CGFloat = 1
+        let color: CGColor = self.tintColor.cgColor
+        
+        self.topLayer = CALayer()
+        self.topLayer.frame = CGRect(x: 0, y: self.bounds.minY, width: width, height: height)
+        self.topLayer.cornerRadius = cornerRadius
+        self.topLayer.backgroundColor = color
+        
+        self.middleLayer = CALayer()
+        self.middleLayer.frame = CGRect(x: 0, y: self.bounds.midY - height/2, width: width, height: height)
+        self.middleLayer.cornerRadius = cornerRadius
+        self.middleLayer.backgroundColor = color
+        
+        self.bottomLayer = CALayer()
+        self.bottomLayer.frame = CGRect(x: 0, y: self.bounds.maxY - height, width: width, height: height)
+        self.bottomLayer.cornerRadius = cornerRadius
+        self.bottomLayer.backgroundColor = color
+        
+        self.layer.addSublayer(self.topLayer)
+        self.layer.addSublayer(self.middleLayer)
+        self.layer.addSublayer(self.bottomLayer)
+        
+        self.addTarget(self, action: #selector(touchUpInsideHandler), for: .touchUpInside)
+    }
+    
+    // MARK: - Event handlers
+    
+    @objc func touchUpInsideHandler(_ sender: PaperButton) {
+        if (self.showMenu) {
+            self.animateToMenu()
+        } else {
+            self.animateToClose()
+        }
+        
+        self.showMenu = !self.showMenu
+    }
+    
+    // MARK: - Animations
     
     func animateToMenu() {
         self.removeAllAnimations()
@@ -110,44 +156,6 @@ class PaperButton: UIControl
             transformBottomAnimation.dynamicsTension = 1000
             self.bottomLayer.pop_add(transformBottomAnimation, forKey: "transformBottomAnimation")
         }
-    }
-    
-    func setup() {
-        let height: CGFloat = 2
-        let width: CGFloat = self.bounds.width
-        let cornerRadius: CGFloat = 1
-        let color: CGColor = self.tintColor.cgColor
-        
-        self.topLayer = CALayer()
-        self.topLayer.frame = CGRect(x: 0, y: self.bounds.minY, width: width, height: height)
-        self.topLayer.cornerRadius = cornerRadius
-        self.topLayer.backgroundColor = color
-        
-        self.middleLayer = CALayer()
-        self.middleLayer.frame = CGRect(x: 0, y: self.bounds.midY - height/2, width: width, height: height)
-        self.middleLayer.cornerRadius = cornerRadius
-        self.middleLayer.backgroundColor = color
-        
-        self.bottomLayer = CALayer()
-        self.bottomLayer.frame = CGRect(x: 0, y: self.bounds.maxY - height, width: width, height: height)
-        self.bottomLayer.cornerRadius = cornerRadius
-        self.bottomLayer.backgroundColor = color
-        
-        self.layer.addSublayer(self.topLayer)
-        self.layer.addSublayer(self.middleLayer)
-        self.layer.addSublayer(self.bottomLayer)
-        
-        self.addTarget(self, action: #selector(touchUpInsideHandler), for: .touchUpInside)
-    }
-    
-    @objc func touchUpInsideHandler(_ sender: PaperButton) {
-        if (self.showMenu) {
-            self.animateToMenu()
-        } else {
-            self.animateToClose()
-        }
-        
-        self.showMenu = !self.showMenu
     }
     
     func removeAllAnimations() {

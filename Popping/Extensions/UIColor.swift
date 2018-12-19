@@ -18,6 +18,8 @@ extension UIColor
         self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
     }
     
+    // MARK: - Custom colors
+    
     class var customGray: UIColor {
         return UIColor(red: 84, green: 84, blue: 84)
     }

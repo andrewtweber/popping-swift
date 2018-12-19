@@ -23,6 +23,8 @@ class ConstraintsViewController: UIViewController
         self.updateConstraints(nil)
     }
     
+    // MARK: - Private instance methods
+    
     private func addBarButton() {
         let item = UIBarButtonItem(title: "Shuffle", style: .plain, target: self, action: #selector(updateConstraints))
         self.navigationItem.rightBarButtonItem = item
