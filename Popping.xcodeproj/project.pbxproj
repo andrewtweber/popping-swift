@@ -160,7 +160,7 @@
 				49A58FB521C9DF0E001F775C /* DismissingAnimator.swift */,
 				49A58FB721C9DFBB001F775C /* PresentingAnimator.swift */,
 			);
-			name = Animator;
+			path = Animator;
 			sourceTree = "<group>";
 		};
 		B735E315195728A500837F60 /* FoldingView */ = {
