@@ -20,7 +20,8 @@
 		49A58FCA21C9F9C7001F775C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FC921C9F9C7001F775C /* CircleView.swift */; };
 		49A58FCC21C9FBC2001F775C /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FCB21C9FBC2001F775C /* CircleViewController.swift */; };
 		49A58FCE21CA0222001F775C /* AnimationsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FCD21CA0222001F775C /* AnimationsListViewController.swift */; };
-		B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70458331923DB2100CF6961 /* CustomTransitionViewController.m */; };
+		49A58FD021CA0A9B001F775C /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FCF21CA0A9B001F775C /* ModalViewController.swift */; };
+		49A58FD221CA0B4C001F775C /* CustomTransitionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FD121CA0B4C001F775C /* CustomTransitionViewController.swift */; };
 		B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7388F0B192E9F13000E6941 /* DecayViewController.m */; };
 		B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7711666192AA5870078DFD7 /* ConstraintsViewController.m */; };
 		B7805EE1192902A900CF997E /* PasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7805EE0192902A900CF997E /* PasswordViewController.m */; };
@@ -35,7 +36,6 @@
 		B785AD3019196A2D00621820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1819196A2D00621820 /* UIKit.framework */; };
 		B785AD3819196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD3619196A2D00621820 /* InfoPlist.strings */; };
 		B785AD3A19196A2D00621820 /* PoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B785AD3919196A2D00621820 /* PoppingTests.m */; };
-		B78E3DEB1926A1450020B9D4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78E3DEA1926A1450020B9D4 /* ModalViewController.m */; };
 		B7ECD74A19211489007F9116 /* PaperButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74919211489007F9116 /* PaperButtonViewController.m */; };
 		B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74E192115EF007F9116 /* PaperButton.m */; };
 		B7F8B05F19326C310036193C /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F8B05E19326C310036193C /* boat.jpg */; };
@@ -68,11 +68,11 @@
 		49A58FC921C9F9C7001F775C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
 		49A58FCB21C9FBC2001F775C /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		49A58FCD21CA0222001F775C /* AnimationsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsListViewController.swift; sourceTree = "<group>"; };
+		49A58FCF21CA0A9B001F775C /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		49A58FD121CA0B4C001F775C /* CustomTransitionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTransitionViewController.swift; sourceTree = "<group>"; };
 		7A00DC518A35A7C96BACE3BB /* Pods-Popping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.release.xcconfig"; sourceTree = "<group>"; };
 		7DA24A14CE73257837EDE37B /* Pods-Popping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B70458321923DB2100CF6961 /* CustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionViewController.h; sourceTree = "<group>"; };
-		B70458331923DB2100CF6961 /* CustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionViewController.m; sourceTree = "<group>"; };
 		B7388F0A192E9F13000E6941 /* DecayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecayViewController.h; sourceTree = "<group>"; };
 		B7388F0B192E9F13000E6941 /* DecayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecayViewController.m; sourceTree = "<group>"; };
 		B7711665192AA5870078DFD7 /* ConstraintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintsViewController.h; sourceTree = "<group>"; };
@@ -93,8 +93,6 @@
 		B785AD3519196A2D00621820 /* PoppingTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PoppingTests-Info.plist"; sourceTree = "<group>"; };
 		B785AD3719196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B785AD3919196A2D00621820 /* PoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoppingTests.m; sourceTree = "<group>"; };
-		B78E3DE91926A1450020B9D4 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
-		B78E3DEA1926A1450020B9D4 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
 		B7ECD74819211489007F9116 /* PaperButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButtonViewController.h; sourceTree = "<group>"; };
 		B7ECD74919211489007F9116 /* PaperButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperButtonViewController.m; sourceTree = "<group>"; };
 		B7ECD74D192115EF007F9116 /* PaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButton.h; sourceTree = "<group>"; };
@@ -131,15 +129,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B70458311923DB0000CF6961 /* CustomTransitionViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B70458321923DB2100CF6961 /* CustomTransitionViewController.h */,
-				B70458331923DB2100CF6961 /* CustomTransitionViewController.m */,
-			);
-			name = CustomTransitionViewController;
-			sourceTree = "<group>";
-		};
 		B70458351923DE0D00CF6961 /* Animator */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,15 +249,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B78E3DE81926A1300020B9D4 /* ModalViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B78E3DE91926A1450020B9D4 /* ModalViewController.h */,
-				B78E3DEA1926A1450020B9D4 /* ModalViewController.m */,
-			);
-			name = ModalViewController;
-			sourceTree = "<group>";
-		};
 		B7ECD7471921146A007F9116 /* PaperButtonViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,15 +302,15 @@
 			children = (
 				B7FF9669191EBF3F00087016 /* ButtonViewController */,
 				B7711664192AA56A0078DFD7 /* ConstraintsViewController */,
-				B70458311923DB0000CF6961 /* CustomTransitionViewController */,
 				B7388F09192E9ED4000E6941 /* DecayViewController */,
-				B78E3DE81926A1300020B9D4 /* ModalViewController */,
 				B7FF9671191FAF0900087016 /* ImageViewController */,
 				B7ECD7471921146A007F9116 /* PaperButtonViewController */,
 				B7805EDE1929028500CF997E /* PasswordViewController */,
 				49A58FCD21CA0222001F775C /* AnimationsListViewController.swift */,
 				49A58FCB21C9FBC2001F775C /* CircleViewController.swift */,
+				49A58FD121CA0B4C001F775C /* CustomTransitionViewController.swift */,
 				49A58FC121C9E98D001F775C /* FoldingViewController.swift */,
+				49A58FCF21CA0A9B001F775C /* ModalViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -518,14 +498,14 @@
 				B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */,
 				49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */,
 				B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */,
-				B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */,
 				B7805EE51929141100CF997E /* PasswordStrengthIndicatorView.m in Sources */,
 				49A58FBC21C9E267001F775C /* UIColor.swift in Sources */,
 				49A58FB621C9DF0E001F775C /* DismissingAnimator.swift in Sources */,
+				49A58FD221CA0B4C001F775C /* CustomTransitionViewController.swift in Sources */,
 				49A58FC821C9F801001F775C /* AppDelegate.swift in Sources */,
 				49A58FCC21C9FBC2001F775C /* CircleViewController.swift in Sources */,
 				B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */,
-				B78E3DEB1926A1450020B9D4 /* ModalViewController.m in Sources */,
+				49A58FD021CA0A9B001F775C /* ModalViewController.swift in Sources */,
 				B7805EE1192902A900CF997E /* PasswordViewController.m in Sources */,
 				49A58FC421C9E9E6001F775C /* FoldingView.swift in Sources */,
 				49A58FB821C9DFBB001F775C /* PresentingAnimator.swift in Sources */,
