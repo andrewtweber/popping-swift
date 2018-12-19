@@ -10,7 +10,7 @@ import UIKit
 
 class FoldingViewController: UIViewController
 {
-    var foldView: FoldingView
+    var foldView: FoldingView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -10,8 +10,8 @@ import UIKit
 
 class ImageView: UIControl
 {
-    var imageView: UIImageView?
-    var image: UIImage?
+    var imageView: UIImageView!
+    var image: UIImage!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -19,7 +19,7 @@ class ImageView: UIControl
         self.layer.masksToBounds = true
         
         self.imageView = UIImageView(frame: self.bounds)
-        self.addSubview(imageView!)
+        self.addSubview(imageView)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -27,7 +27,7 @@ class ImageView: UIControl
     }
     
     func setImage(_ image: UIImage) {
-        self.imageView?.image = image
+        self.imageView.image = image
         self.image = image
     }
 }

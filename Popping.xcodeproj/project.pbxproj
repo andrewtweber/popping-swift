@@ -17,6 +17,8 @@
 		49A58FC421C9E9E6001F775C /* FoldingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FC321C9E9E6001F775C /* FoldingView.swift */; };
 		49A58FC621C9F636001F775C /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FC521C9F636001F775C /* ImageView.swift */; };
 		49A58FC821C9F801001F775C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FC721C9F801001F775C /* AppDelegate.swift */; };
+		49A58FCA21C9F9C7001F775C /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FC921C9F9C7001F775C /* CircleView.swift */; };
+		49A58FCC21C9FBC2001F775C /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FCB21C9FBC2001F775C /* CircleViewController.swift */; };
 		B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B70458331923DB2100CF6961 /* CustomTransitionViewController.m */; };
 		B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7388F0B192E9F13000E6941 /* DecayViewController.m */; };
 		B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7711666192AA5870078DFD7 /* ConstraintsViewController.m */; };
@@ -26,7 +28,6 @@
 		B785AD1719196A2D00621820 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1619196A2D00621820 /* CoreGraphics.framework */; };
 		B785AD1919196A2D00621820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1819196A2D00621820 /* UIKit.framework */; };
 		B785AD1F19196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD1D19196A2D00621820 /* InfoPlist.strings */; };
-		B785AD2119196A2D00621820 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B785AD2019196A2D00621820 /* main.m */; };
 		B785AD2719196A2D00621820 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B785AD2619196A2D00621820 /* Images.xcassets */; };
 		B785AD2E19196A2D00621820 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD2D19196A2D00621820 /* XCTest.framework */; };
 		B785AD2F19196A2D00621820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1419196A2D00621820 /* Foundation.framework */; };
@@ -34,8 +35,6 @@
 		B785AD3819196A2D00621820 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B785AD3619196A2D00621820 /* InfoPlist.strings */; };
 		B785AD3A19196A2D00621820 /* PoppingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B785AD3919196A2D00621820 /* PoppingTests.m */; };
 		B78E3DEB1926A1450020B9D4 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78E3DEA1926A1450020B9D4 /* ModalViewController.m */; };
-		B79B5C1F192D349B00A82EEB /* CircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B79B5C1E192D349B00A82EEB /* CircleViewController.m */; };
-		B79B5C23192D37DB00A82EEB /* CircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = B79B5C22192D37DB00A82EEB /* CircleView.m */; };
 		B7ECD74A19211489007F9116 /* PaperButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74919211489007F9116 /* PaperButtonViewController.m */; };
 		B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B7ECD74E192115EF007F9116 /* PaperButton.m */; };
 		B7F8B05F19326C310036193C /* boat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B7F8B05E19326C310036193C /* boat.jpg */; };
@@ -66,6 +65,8 @@
 		49A58FC321C9E9E6001F775C /* FoldingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingView.swift; sourceTree = "<group>"; };
 		49A58FC521C9F636001F775C /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
 		49A58FC721C9F801001F775C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49A58FC921C9F9C7001F775C /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		49A58FCB21C9FBC2001F775C /* CircleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		7A00DC518A35A7C96BACE3BB /* Pods-Popping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.release.xcconfig"; sourceTree = "<group>"; };
 		7DA24A14CE73257837EDE37B /* Pods-Popping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +86,6 @@
 		B785AD1819196A2D00621820 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B785AD1C19196A2D00621820 /* Popping-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Popping-Info.plist"; sourceTree = "<group>"; };
 		B785AD1E19196A2D00621820 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B785AD2019196A2D00621820 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B785AD2619196A2D00621820 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		B785AD2C19196A2D00621820 /* PoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B785AD2D19196A2D00621820 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -94,10 +94,6 @@
 		B785AD3919196A2D00621820 /* PoppingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PoppingTests.m; sourceTree = "<group>"; };
 		B78E3DE91926A1450020B9D4 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		B78E3DEA1926A1450020B9D4 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		B79B5C1D192D349B00A82EEB /* CircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleViewController.h; sourceTree = "<group>"; };
-		B79B5C1E192D349B00A82EEB /* CircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleViewController.m; sourceTree = "<group>"; };
-		B79B5C21192D37DB00A82EEB /* CircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleView.h; sourceTree = "<group>"; };
-		B79B5C22192D37DB00A82EEB /* CircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleView.m; sourceTree = "<group>"; };
 		B7ECD74819211489007F9116 /* PaperButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButtonViewController.h; sourceTree = "<group>"; };
 		B7ECD74919211489007F9116 /* PaperButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaperButtonViewController.m; sourceTree = "<group>"; };
 		B7ECD74D192115EF007F9116 /* PaperButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaperButton.h; sourceTree = "<group>"; };
@@ -232,6 +228,7 @@
 				B785AD1B19196A2D00621820 /* Supporting Files */,
 				B7FF965B191EB5D900087016 /* ViewControllers */,
 				49A58FC721C9F801001F775C /* AppDelegate.swift */,
+				B785AD2619196A2D00621820 /* Images.xcassets */,
 			);
 			path = Popping;
 			sourceTree = "<group>";
@@ -240,10 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				B7F8B05E19326C310036193C /* boat.jpg */,
-				B785AD2619196A2D00621820 /* Images.xcassets */,
 				B785AD1C19196A2D00621820 /* Popping-Info.plist */,
 				B785AD1D19196A2D00621820 /* InfoPlist.strings */,
-				B785AD2019196A2D00621820 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -275,24 +270,6 @@
 			name = ModalViewController;
 			sourceTree = "<group>";
 		};
-		B79B5C1C192D348500A82EEB /* CircleViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B79B5C1D192D349B00A82EEB /* CircleViewController.h */,
-				B79B5C1E192D349B00A82EEB /* CircleViewController.m */,
-			);
-			name = CircleViewController;
-			sourceTree = "<group>";
-		};
-		B79B5C20192D361600A82EEB /* CircleView */ = {
-			isa = PBXGroup;
-			children = (
-				B79B5C21192D37DB00A82EEB /* CircleView.h */,
-				B79B5C22192D37DB00A82EEB /* CircleView.m */,
-			);
-			name = CircleView;
-			sourceTree = "<group>";
-		};
 		B7ECD7471921146A007F9116 /* PaperButtonViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,9 +282,9 @@
 		B7ECD74B192115D8007F9116 /* Controls */ = {
 			isa = PBXGroup;
 			children = (
-				B79B5C20192D361600A82EEB /* CircleView */,
 				B7805EE2192913E300CF997E /* PasswordStrengthIndicatorView */,
 				B7ECD74C192115DD007F9116 /* PaperButton */,
+				49A58FC921C9F9C7001F775C /* CircleView.swift */,
 				49A58FBF21C9E5BD001F775C /* FlatButton.swift */,
 				49A58FC321C9E9E6001F775C /* FoldingView.swift */,
 				49A58FC521C9F636001F775C /* ImageView.swift */,
@@ -346,7 +323,6 @@
 			children = (
 				B7FF965E191EB63700087016 /* AnimationListViewController */,
 				B7FF9669191EBF3F00087016 /* ButtonViewController */,
-				B79B5C1C192D348500A82EEB /* CircleViewController */,
 				B7711664192AA56A0078DFD7 /* ConstraintsViewController */,
 				B70458311923DB0000CF6961 /* CustomTransitionViewController */,
 				B7388F09192E9ED4000E6941 /* DecayViewController */,
@@ -354,6 +330,7 @@
 				B7FF9671191FAF0900087016 /* ImageViewController */,
 				B7ECD7471921146A007F9116 /* PaperButtonViewController */,
 				B7805EDE1929028500CF997E /* PasswordViewController */,
+				49A58FCB21C9FBC2001F775C /* CircleViewController.swift */,
 				49A58FC121C9E98D001F775C /* FoldingViewController.swift */,
 			);
 			path = ViewControllers;
@@ -543,23 +520,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A58FCA21C9F9C7001F775C /* CircleView.swift in Sources */,
 				49A58FC621C9F636001F775C /* ImageView.swift in Sources */,
 				49A58FC221C9E98D001F775C /* FoldingViewController.swift in Sources */,
-				B79B5C23192D37DB00A82EEB /* CircleView.m in Sources */,
 				49A58FBE21C9E4CB001F775C /* UIImage.swift in Sources */,
 				B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */,
 				B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */,
 				49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */,
-				B79B5C1F192D349B00A82EEB /* CircleViewController.m in Sources */,
 				B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */,
 				B70458341923DB2100CF6961 /* CustomTransitionViewController.m in Sources */,
 				B7805EE51929141100CF997E /* PasswordStrengthIndicatorView.m in Sources */,
 				49A58FBC21C9E267001F775C /* UIColor.swift in Sources */,
 				49A58FB621C9DF0E001F775C /* DismissingAnimator.swift in Sources */,
 				49A58FC821C9F801001F775C /* AppDelegate.swift in Sources */,
+				49A58FCC21C9FBC2001F775C /* CircleViewController.swift in Sources */,
 				B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */,
 				B78E3DEB1926A1450020B9D4 /* ModalViewController.m in Sources */,
-				B785AD2119196A2D00621820 /* main.m in Sources */,
 				B7805EE1192902A900CF997E /* PasswordViewController.m in Sources */,
 				49A58FC421C9E9E6001F775C /* FoldingView.swift in Sources */,
 				49A58FB821C9DFBB001F775C /* PresentingAnimator.swift in Sources */,

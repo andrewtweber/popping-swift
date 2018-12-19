@@ -17,12 +17,12 @@ import UIKit
 
 class FoldingView: UIView
 {
-    var image: UIImage
-    var topView: UIImageView
-    var backView: UIImageView
-    var bottomShadowLayer: CAGradientLayer
-    var topShadowLayer: CAGradientLayer
-    var initialLocation: CGFloat
+    var image: UIImage!
+    var topView: UIImageView!
+    var backView: UIImageView!
+    var bottomShadowLayer: CAGradientLayer!
+    var topShadowLayer: CAGradientLayer!
+    var initialLocation: CGFloat!
     
     init(frame: CGRect, image: UIImage) {
         super.init(frame: frame)
