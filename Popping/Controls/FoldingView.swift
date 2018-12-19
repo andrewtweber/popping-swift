@@ -93,7 +93,7 @@ class FoldingView: UIView
         self.rotateToOriginWithVelocity(5)
     }
     
-    @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
+    @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {
         let location: CGPoint = recognizer.location(in: self)
         
         if (recognizer.state == .began) {

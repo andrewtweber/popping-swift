@@ -39,7 +39,7 @@ class ImageViewController: UIViewController
         self.scaleDownView(imageView)
     }
     
-    @objc private func handlePan(recognizer: UIPanGestureRecognizer) {
+    @objc private func handlePan(_ recognizer: UIPanGestureRecognizer) {
         self.scaleDownView(recognizer.view!)
         
         let translation: CGPoint = recognizer.translation(in: self.view)
@@ -60,11 +60,11 @@ class ImageViewController: UIViewController
         }
     }
     
-    @objc private func touchDown(sender: UIControl) {
+    @objc private func touchDown(_ sender: UIControl) {
         self.pauseAllAnimations(true, forLayer: sender.layer)
     }
     
-    @objc private func touchUpInside(sender: UIControl) {
+    @objc private func touchUpInside(_ sender: UIControl) {
         guard let animationInfo = self.animationInfoForLayer(sender.layer) else {
             return
         }

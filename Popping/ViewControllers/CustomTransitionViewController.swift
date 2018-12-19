@@ -31,7 +31,7 @@ class CustomTransitionViewController: UIViewController
         )
     }
     
-    @objc func showModal(sender: Any) {
+    @objc func showModal(_ sender: Any) {
         let modalViewController = ModalViewController()
         modalViewController.transitioningDelegate = self
         modalViewController.modalPresentationStyle = .custom

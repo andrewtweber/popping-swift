@@ -65,7 +65,7 @@ class ModalViewController: UIViewController
         )
     }
     
-    @objc func dismiss(sender: Any) {
+    @objc func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
 }

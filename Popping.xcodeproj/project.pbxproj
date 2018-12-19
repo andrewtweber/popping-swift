@@ -25,8 +25,8 @@
 		49A58FD421CA1DA8001F775C /* PasswordStrengthIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FD321CA1DA8001F775C /* PasswordStrengthIndicatorView.swift */; };
 		49A58FD621CA1F9B001F775C /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FD521CA1F9B001F775C /* PasswordViewController.swift */; };
 		49A58FD821CA258D001F775C /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FD721CA258D001F775C /* ImageViewController.swift */; };
+		49A58FDA21CA35E6001F775C /* ConstraintsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A58FD921CA35E6001F775C /* ConstraintsViewController.swift */; };
 		B7388F0C192E9F13000E6941 /* DecayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7388F0B192E9F13000E6941 /* DecayViewController.m */; };
-		B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7711666192AA5870078DFD7 /* ConstraintsViewController.m */; };
 		B785AD1519196A2D00621820 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1419196A2D00621820 /* Foundation.framework */; };
 		B785AD1719196A2D00621820 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1619196A2D00621820 /* CoreGraphics.framework */; };
 		B785AD1919196A2D00621820 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B785AD1819196A2D00621820 /* UIKit.framework */; };
@@ -73,13 +73,12 @@
 		49A58FD321CA1DA8001F775C /* PasswordStrengthIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStrengthIndicatorView.swift; sourceTree = "<group>"; };
 		49A58FD521CA1F9B001F775C /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		49A58FD721CA258D001F775C /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		49A58FD921CA35E6001F775C /* ConstraintsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstraintsViewController.swift; sourceTree = "<group>"; };
 		7A00DC518A35A7C96BACE3BB /* Pods-Popping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.release.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.release.xcconfig"; sourceTree = "<group>"; };
 		7DA24A14CE73257837EDE37B /* Pods-Popping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Popping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Popping/Pods-Popping.debug.xcconfig"; sourceTree = "<group>"; };
 		7F0418B8F5248013F1DDEB1F /* Pods_Popping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Popping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7388F0A192E9F13000E6941 /* DecayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DecayViewController.h; sourceTree = "<group>"; };
 		B7388F0B192E9F13000E6941 /* DecayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DecayViewController.m; sourceTree = "<group>"; };
-		B7711665192AA5870078DFD7 /* ConstraintsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstraintsViewController.h; sourceTree = "<group>"; };
-		B7711666192AA5870078DFD7 /* ConstraintsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstraintsViewController.m; sourceTree = "<group>"; };
 		B785AD1119196A2D00621820 /* Popping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Popping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B785AD1419196A2D00621820 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B785AD1619196A2D00621820 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -142,15 +141,6 @@
 				B7388F0B192E9F13000E6941 /* DecayViewController.m */,
 			);
 			name = DecayViewController;
-			sourceTree = "<group>";
-		};
-		B7711664192AA56A0078DFD7 /* ConstraintsViewController */ = {
-			isa = PBXGroup;
-			children = (
-				B7711665192AA5870078DFD7 /* ConstraintsViewController.h */,
-				B7711666192AA5870078DFD7 /* ConstraintsViewController.m */,
-			);
-			name = ConstraintsViewController;
 			sourceTree = "<group>";
 		};
 		B785AD0819196A2D00621820 = {
@@ -280,11 +270,11 @@
 			isa = PBXGroup;
 			children = (
 				B7FF9669191EBF3F00087016 /* ButtonViewController */,
-				B7711664192AA56A0078DFD7 /* ConstraintsViewController */,
 				B7388F09192E9ED4000E6941 /* DecayViewController */,
 				B7ECD7471921146A007F9116 /* PaperButtonViewController */,
 				49A58FCD21CA0222001F775C /* AnimationsListViewController.swift */,
 				49A58FCB21C9FBC2001F775C /* CircleViewController.swift */,
+				49A58FD921CA35E6001F775C /* ConstraintsViewController.swift */,
 				49A58FD121CA0B4C001F775C /* CustomTransitionViewController.swift */,
 				49A58FC121C9E98D001F775C /* FoldingViewController.swift */,
 				49A58FD721CA258D001F775C /* ImageViewController.swift */,
@@ -461,12 +451,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A58FD421CA1DA8001F775C /* PasswordStrengthIndicatorView.swift in Sources */,
+				49A58FDA21CA35E6001F775C /* ConstraintsViewController.swift in Sources */,
 				49A58FCA21C9F9C7001F775C /* CircleView.swift in Sources */,
 				49A58FC621C9F636001F775C /* ImageView.swift in Sources */,
 				49A58FC221C9E98D001F775C /* FoldingViewController.swift in Sources */,
 				49A58FBE21C9E4CB001F775C /* UIImage.swift in Sources */,
 				B7ECD74F192115EF007F9116 /* PaperButton.m in Sources */,
-				B7711667192AA5870078DFD7 /* ConstraintsViewController.m in Sources */,
 				49A58FC021C9E5BD001F775C /* FlatButton.swift in Sources */,
 				B7FF966C191EBF6900087016 /* ButtonViewController.m in Sources */,
 				49A58FBC21C9E267001F775C /* UIColor.swift in Sources */,

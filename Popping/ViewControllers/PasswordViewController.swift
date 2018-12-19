@@ -66,7 +66,7 @@ class PasswordViewController: UIViewController
         )
     }
     
-    @objc private func textFieldDidChange(sender: UITextField) {
+    @objc private func textFieldDidChange(_ sender: UITextField) {
         if (sender.text!.count < 1) {
             self.passwordStrengthIndicatorView.status = .none
             return

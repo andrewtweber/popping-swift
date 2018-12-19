@@ -46,7 +46,7 @@ class AnimationsListViewController: UITableViewController
             //"Paper Button Animation",
             "Folding Animation",
             "Password Indicator Animation",
-            //"Constraints Animation",
+            "Constraints Animation",
         ]
         self.controllers = [
             //ButtonViewController.self,
@@ -56,7 +56,7 @@ class AnimationsListViewController: UITableViewController
             //PaperButtonViewController.self,
             FoldingViewController.self,
             PasswordViewController.self,
-            //ConstraintsViewController.self,
+            ConstraintsViewController.self,
         ]
         
         self.tableView.register(MenuTableViewCell.self, forCellReuseIdentifier: kCellIdentifier)
@@ -74,6 +74,7 @@ class AnimationsListViewController: UITableViewController
             NSAttributedString.Key.foregroundColor: UIColor.customBlue,
         ]
         
+        // TODO this isn't working
         let attributedString = NSMutableAttributedString(string: self.title!)
         attributedString.addAttributes(attributes, range: NSRange(location: 1, length: 1))
         headlineLabel.attributedText = attributedString

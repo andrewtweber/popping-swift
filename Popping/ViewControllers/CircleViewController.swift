@@ -51,7 +51,7 @@ class CircleViewController: UIViewController
         self.circleView.setStrokeEnd(CGFloat(slider.value), animated: false)
     }
     
-    @objc private func sliderChanged(slider: UISlider) {
+    @objc private func sliderChanged(_ slider: UISlider) {
         self.circleView.setStrokeEnd(CGFloat(slider.value), animated: true)
     }
 }
